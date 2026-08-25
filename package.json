@@ -1,19 +1,27 @@
 {
-  "name": "popdex-wallet-bot",
+  "name": "popdex-bot",
   "version": "1.0.0",
-  "description": "Discord bot for tracking PopDEX wallet stats in a server channel",
-  "main": "index.js",
+  "description": "Popdex — a premium Discord-native trading companion for the Popdex DEX.",
+  "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node index.js",
-    "deploy-commands": "node deploy-commands.js"
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "deploy:global": "node src/deploy-commands.js --global"
+  },
+  "engines": {
+    "node": ">=18.17.0"
   },
   "dependencies": {
     "@napi-rs/canvas": "^0.1.53",
-    "discord.js": "^14.14.1",
-    "dotenv": "^16.4.5"
+    "axios": "^1.7.7",
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "fluent-ffmpeg": "^2.1.3"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+  "optionalDependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
 }
