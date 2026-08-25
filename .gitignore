@@ -1,9 +1,3 @@
-node_modules/
+.env 
 .env
-.env.local
-*.log
-npm-debug.log*
-.DS_Store
-dist/
-tmp/
-data/wallets.json
+node_modules/
